@@ -3,25 +3,73 @@ font-family: 'Open Sans', sans-serif;
 */
 
  /* GENERAL */
-* {
-    font-family: 'Open Sans', sans-serif;
-}
 
 body{
     background-color: #ebebeb;
     margin:0 auto;
     text-align: center;
+    font-family: 'Open Sans', sans-serif;
 }
+
+/* BOXES - DIV */
+.up{
+    position:relative; /*position relative for the div in order to move the button */
+    margin: 15px auto 0 auto; /* top right bottom left */
+    width:500px;
+    background-color: #ffffff;
+}
+
+.middle{
+    margin: 15px auto 0 auto; 
+    width:500px;
+    background-color: #ffffff;
+}
+
+.bottom{
+    margin: 15px auto 0 auto; 
+    width:500px;
+    background-color: #ffffff; 
+    overflow:hidden; /* color of the background color not
+                        hidden when I use the float property*/
+    margin-bottom: 10px;
+}
+
 /* TITLES */
 
 h1{
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 800;
     color:#dd5555;
 }
 
+h2 span{
+    background-color: #d4d4d4;
+}
+
 h2{
     color:#817d7d;
+    font-size: 20px;
+}
+
+.bottom h2{
+    font-weight: 700;
+}
+
+h3{
+    font-size: 17px;
+    font-weight: 600;
+    color:#817d7d;
+    float:left;
+    margin-left:80px;
+    margin-bottom: -20px;
+}
+
+.title-3-1{
+    margin-left: 100px;
+}
+
+.title-3-2{
+    margin-left: 150px;
 }
 
 /* PARAGRAPHES */
@@ -32,16 +80,72 @@ p{
     
 }
 
-
 .up p{
     font-size: 13px;
     padding: 25px 50px 75px;
+    margin-top: -20px;
+    margin-bottom: -70px;
 }
 
-.up{
-    margin: 15px auto 0 auto; /* top right bottom left */
-    width:500px;
-    background-color: #ffffff;
+.bottom p{
+    position:relative;
+    font-size: 15px;
+    float:left;
+    width: 60%;
+    padding: 12px;
+    
 }
 
 
+
+/* LIST STYLE */
+ul{
+    list-style-type: none;
+}
+li{
+    
+    display: inline-block;
+    padding:35px;
+    font-size: 15px;
+}
+li a{
+    text-decoration: none;
+    color:#cccccc;
+}
+
+
+
+/* IMAGES */
+
+.rounded{
+    margin-top: 15px;
+    border-radius: 50%;
+    border: 5px solid #cccccc;   
+}
+
+.bottom img{
+    float:left;
+    padding: 20px;
+}
+
+
+/* BUTTON LINK */
+
+.button{
+    background-color: #dd5555;
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    margin-bottom: 13px;
+}
+
+/* FLOAT */
+
+.clear{
+    clear:both; /* stop the float */
+}
